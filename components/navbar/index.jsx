@@ -13,6 +13,7 @@ function NavBar() {
           width={100}
           height={80}
           layout="responsive"
+          priority
         />
       </div>
       <NavLinks style="basis-[90%] " />
