@@ -9,8 +9,8 @@ import {
 } from "react-icons/fa";
 function SocialLinks({ style }) {
   const icons = [
-    FaTelegramPlane,
     FaDiscord,
+    FaTelegramPlane,
     FaTwitter,
     FaFacebookF,
     FaInstagram,
