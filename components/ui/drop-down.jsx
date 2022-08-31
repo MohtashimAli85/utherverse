@@ -4,9 +4,8 @@ import Link from "next/link";
 
 export default function DropDown({ title, items }) {
   const dropDownHandler = (id, type) => {
-    const title = document.querySelector(`.${id}`);
+    const title = document.querySelector(`.${id}-btn`);
     const value = title.getAttribute("aria-expanded");
-    console.log(value);
     if (value == "false" && type == "Enter") {
       title.click();
     }
@@ -22,9 +21,9 @@ export default function DropDown({ title, items }) {
     >
       <Menu as="div" className="relative inline-block text-left">
         <Menu.Button
-          className={`${title} px-4 py-2 link-gradient flex w-full text-base gap-1 justify-center  rounded-md bg-black bg-opacity-20  text-white hover:bg-opacity-30 focus:outline-none `}
+          className={`${title}-btn px-4 py-2 link-gradient flex w-full text-base gap-1 justify-center  rounded-md bg-black bg-opacity-20  text-white hover:bg-opacity-30 focus:outline-none `}
         >
-          <span id={title}>{title}</span>
+          <span className={title}>{title}</span>
           <svg
             className="self-center mt-[2px]"
             width="10"
@@ -55,11 +54,9 @@ export default function DropDown({ title, items }) {
                   className="hover:bg-primary bg-transparent transition duration-150 px-3 py-1 !text-base"
                   key={i}
                 >
-                  <Menu.Item>
-                    <Link href={e.href}>
-                      <a className="">{e.name}</a>
-                    </Link>
-                  </Menu.Item>
+                  <Link href={e.href} passHref>
+                    <a>{e.name}</a>
+                  </Link>
                 </li>
               );
             })}
