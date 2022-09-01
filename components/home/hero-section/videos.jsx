@@ -32,8 +32,7 @@ function Videos() {
               muted
               loop
               autoPlay
-              playsinline
-              defaultMuted
+              playsInline
             />
           </div>
         );
