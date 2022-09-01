@@ -31,7 +31,7 @@ function NavBar() {
       <SocialLinks style="basis-[10%] hidden lg:flex" />
       <div
         ref={mobileNavBarEl}
-        className="absolute  top-0  left-0 -translate-x-64 transition duration-150 bg-black  z-20 lg:hidden w-56"
+        className="fixed  top-0  left-0 -translate-x-64 transition duration-300 bg-black  z-20 lg:hidden w-56 h-screen"
       >
         <div className="border-b border-primary shadow-[0px_3px_96px] shadow-primary p-5 flex gap-3 items-center">
           <FaAngleDoubleLeft

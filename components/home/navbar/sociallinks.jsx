@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import {
   FaTelegramPlane,
   FaDiscord,
@@ -9,11 +10,11 @@ import {
 } from "react-icons/fa";
 function SocialLinks({ style }) {
   const icons = [
-    FaDiscord,
-    FaTelegramPlane,
-    FaTwitter,
-    FaFacebookF,
-    FaInstagram,
+    { icon: FaDiscord, href: "https://discord.gg/theuthers" },
+    { icon: FaTelegramPlane, href: "https://t.me/utherverseannouncements" },
+    { icon: FaTwitter, href: "https://twitter.com/Utherverse" },
+    { icon: FaFacebookF, href: "https://www.facebook.com/UtherverseDigital" },
+    { icon: FaInstagram, href: "https://www.instagram.com/utherverse" },
   ];
   return (
     <ul className={`flex justify-between gap-3 ${style}`}>
@@ -23,7 +24,11 @@ function SocialLinks({ style }) {
             key={i}
             className="text-white hover:text-primary transition duration-150 cursor-pointer "
           >
-            <Icon className="min-w-[18px] min-h-[18px]" />
+            <Link href={Icon.href}>
+              <a>
+                <Icon.icon className="min-w-[22px] min-h-[22px]" />
+              </a>
+            </Link>
           </li>
         );
       })}
