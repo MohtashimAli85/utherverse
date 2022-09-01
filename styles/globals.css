@@ -56,3 +56,16 @@
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
+@media screen and (max-width: 576px) {
+  .hero-section::before {
+    background: #6c3ec396;
+    left: 0;
+    top: 0;
+    /* box-shadow: 0px 0px 234px 186px #430da7; */
+    display: none;
+  }
+
+  .hero-section::after {
+    display: none;
+  }
+}
