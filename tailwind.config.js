@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#7e20fc",
+        liver: "#4d4c50",
       },
       fontFamily: {
         sans: ["Work Sans", "sans-serif"],
