@@ -20,14 +20,14 @@ function PoweredBy() {
               viewBox="0 0 119.793 44.787"
             >
               <defs>
-                <clipPath id="clip-path">
+                <clippath id="clip-path">
                   <rect
                     id="Rectangle_19"
                     data-name="Rectangle 19"
                     width="119.793"
                     height="44.787"
                   ></rect>
-                </clipPath>
+                </clippath>
               </defs>
               <path
                 id="Path_1068"
@@ -35,7 +35,7 @@ function PoweredBy() {
                 d="M18.765,34.7,8.9,24.609H24.611l7.8,13.509Zm9.6-12.309L36.233,8.811l3.779,13.647L36.239,36.075Zm-9.624-12.26L32.413,6.648,24.647,20.172,8.9,20.218ZM38.8,0,21.012,4.773,18.349,9.4l-5.341.016L0,22.394,12.941,35.369h5.353l2.642,4.675,17.752,4.743L43.566,26.9l-2.71-4.539,2.71-4.607Z"
               ></path>
               <g id="Group_4" data-name="Group 4">
-                <g id="Group_3" data-name="Group 3" cliPath="url(#clip-path)">
+                <g id="Group_3" data-name="Group 3" clipPath="url(#clip-path)">
                   <path
                     id="Path_1069"
                     data-name="Path 1069"
@@ -88,14 +88,14 @@ function PoweredBy() {
               viewBox="0 0 119.727 41.729"
             >
               <defs>
-                <clipPath id="clip-path">
+                <clippath id="clip-path">
                   <rect
                     id="Rectangle_21"
                     data-name="Rectangle 21"
                     width="119.727"
                     height="41.729"
                   ></rect>
-                </clipPath>
+                </clippath>
               </defs>
               <path
                 id="Path_1082"
