@@ -9,7 +9,7 @@ function Links() {
     { name: "PARTICIPATE IN IDO", href: "/" },
   ];
   return (
-    <ul className=" flex gap-5 font-medium">
+    <ul className=" flex flex-wrap gap-5 font-medium">
       {links.map((link, index) => {
         return (
           <li
