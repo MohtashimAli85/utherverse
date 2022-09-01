@@ -42,24 +42,32 @@ export default function NavLinks({ style }) {
       href: "/",
     },
     {
-      name: "careers",
+      name: "Careers",
       href: "/",
     },
   ];
   return (
     <ul
-      className={`flex md:text-lg items-center justify-center gap-4 font-medium ${style}`}
+      className={`flex text-base md:text-lg items-center max-w-[180px] ml-auto mr-5  lg:mx-auto  lg:max-w-xl xl:max-w-3xl justify-center gap-4 font-medium ${style}`}
     >
       {dropDown.map((link, index) => {
         return (
-          <li key={index} className="">
+          <li
+            key={index}
+            className=" w-full border border-primary lg:border-0 lg:w-fit basis-1/4 rounded-md"
+          >
             <DropDown title={link.name} items={link.items} />
           </li>
         );
       })}
       {links.map((link, index) => (
-        <li key={index} className="px-4 py-2 link-gradient rounded-md">
-          <Link href={link.href}>{link.name}</Link>
+        <li
+          key={index}
+          className="w-full border border-primary lg:border-0 lg:w-fit basis-1/4 text-left lg:text-center px-4 py-2 link-gradient rounded-md"
+        >
+          <Link href={link.href} passHref>
+            <a className="">{link.name}</a>
+          </Link>
         </li>
       ))}
     </ul>
