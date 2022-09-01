@@ -1,6 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
-
+import HeroSection from "../components/hero-section";
 export default function Home() {
-  return <h1 className="text-red-500"></h1>;
+  return (
+    <main className=" ">
+      <HeroSection />
+    </main>
+  );
 }
