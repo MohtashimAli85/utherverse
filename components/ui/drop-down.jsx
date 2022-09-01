@@ -8,6 +8,7 @@ export default function DropDown({ title, items }) {
     const value = title.getAttribute("aria-expanded");
     if (value == "false" && type == "Enter") {
       title.click();
+      console.log(value);
     }
     if (value == "true" && type == "Leave") {
       title.click();
@@ -19,11 +20,11 @@ export default function DropDown({ title, items }) {
       onMouseEnter={() => dropDownHandler(title, "Enter")}
       onMouseLeave={() => dropDownHandler(title, "Leave")}
     >
-      <Menu as="div" className="relative inline-block text-left">
+      <Menu as="div" className="relative block text-left">
         <Menu.Button
-          className={`${title}-btn px-4 py-2 link-gradient flex w-full text-base gap-1 justify-center  rounded-md bg-black bg-opacity-20  text-white hover:bg-opacity-30 focus:outline-none `}
+          className={`${title}-btn px-4 py-2 link-gradient flex w-full text-base gap-1 lg:justify-center  rounded-md bg-black bg-opacity-20  text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-opacity-75 `}
         >
-          <span className={title}>{title}</span>
+          <span className={`${title} text-base md:text-lg`}>{title}</span>
           <svg
             className="self-center mt-[2px]"
             width="10"
@@ -46,12 +47,12 @@ export default function DropDown({ title, items }) {
         >
           <Menu.Items
             as="ul"
-            className="absolute font-medium mt-2 w-44 origin-top-right  rounded-md bg-black shadow-lg ring-1 ring-primary ring-opacity-5 border border-primary "
+            className="absolute z-20 font-medium mt-2 w-44 origin-top-right  rounded-md bg-black shadow-lg ring-1 ring-primary ring-opacity-5 border border-primary "
           >
             {items.map((e, i) => {
               return (
                 <li
-                  className="hover:bg-primary bg-transparent transition duration-150 px-3 py-1 !text-base"
+                  className="hover:bg-primary bg-transparent transition cursor-pointer duration-150 px-3 py-1 !text-base"
                   key={i}
                 >
                   <Link href={e.href} passHref>
