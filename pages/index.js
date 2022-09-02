@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
-import HeroSection from "../components/home/hero-section";
+import Main from "../components/home";
 export default function Home() {
   return (
-    <main className=" ">
-      <HeroSection />
-    </main>
+    <>
+      <Main />
+    </>
   );
 }
