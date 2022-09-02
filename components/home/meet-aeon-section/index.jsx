@@ -24,7 +24,7 @@ function MeetAeonSection() {
             layout="responsive"
           />
         </div>
-        <div className="relative meet-aeon md:absolute lg:w-1/2 right-0 top-0 w-full h-full lg:px-4 lg:bg-black/0 bg-black/50 py-6 md:py-8 lg:py-14">
+        <div className="relative meet-aeon md:absolute lg:w-1/2 right-0 top-0 w-full h-full lg:px-4 lg:bg-black/0 bg-black/50 py-6 lg:py-8 xl:py-14">
           <Container>
             <div className="space-y-2 lg:space-y-3">
               <h1 className="text-3xl md:text-4xl  xl:text-5xl ">
@@ -39,13 +39,13 @@ function MeetAeonSection() {
                 Utherverse is Building the Next Layer of the Internet.
               </p>
             </div>
-            <p className="md:w-[70%] mt-4 lg:mt-8 font-light mb-8 lg:mb-16">
+            <p className="md:w-[70%] mt-4 xl:mt-8 font-light mb-8 lg:mb-16">
               Users of the Utherverse will access this new Internet layer using
               a new kind of Internet Browser, named Aeon™. Aeon™ is a web 3.D
               browser with powerful new search engine tools.
             </p>
             <Link href="/">
-              <a className="border border-soft-blue rounded-md px-6 py-2 tracking-wide font-medium uppercase">
+              <a className="border link-gradient border-soft-blue rounded-md px-6 py-2 tracking-wide font-medium uppercase">
                 Learn More
               </a>
             </Link>
