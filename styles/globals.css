@@ -1,7 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@font-face {
+  font-family: "animo";
+  src: url("/font/Animo.otf");
+}
 .link-gradient:hover {
   background: -webkit-linear-gradient(#7e20fc9e, #598ff1ab);
   background: -moz-linear-gradient(#7e20fc9e, #598ff1ab);
@@ -56,6 +59,44 @@
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
+.meet-aeon::before {
+  content: "";
+  height: 1px;
+  position: absolute;
+  background: #381552;
+  width: 1px;
+  top: 50%;
+  right: 10%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 234px 186px #7f4aa7;
+  opacity: 0.9;
+  z-index: -1;
+}
+.divider::before {
+  content: "";
+  width: 100vw;
+  min-height: 1px;
+  display: inline-block;
+  background: #7e20fc;
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  z-index: -1;
+  transform: translate(0%, -50%);
+}
+
+.divider::after {
+  content: "";
+  width: 100vw;
+  min-height: 1px;
+  display: inline-block;
+  background: #7e20fc;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  z-index: -1;
+  transform: translate(0%, -50%);
+}
 @media screen and (max-width: 576px) {
   .hero-section::before {
     background: #6c3ec396;
@@ -66,6 +107,11 @@
   }
 
   .hero-section::after {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .meet-aeon::before {
     display: none;
   }
 }
