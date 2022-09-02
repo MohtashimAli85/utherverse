@@ -5,6 +5,9 @@
   font-family: "animo";
   src: url("/font/Animo.otf");
 }
+html {
+  scroll-behavior: smooth;
+}
 .link-gradient:hover {
   background: -webkit-linear-gradient(#7e20fc9e, #598ff1ab);
   background: -moz-linear-gradient(#7e20fc9e, #598ff1ab);
@@ -72,7 +75,7 @@
   opacity: 0.9;
   z-index: -1;
 }
-.divider::before {
+.divider span::before {
   content: "";
   width: 100vw;
   min-height: 1px;
@@ -84,8 +87,10 @@
   z-index: -1;
   transform: translate(0%, -50%);
 }
-
-.divider::after {
+.divider span {
+  overflow: visible !important;
+}
+.divider span::after {
   content: "";
   width: 100vw;
   min-height: 1px;
