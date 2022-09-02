@@ -16,6 +16,9 @@ module.exports = {
         sans: ["Work Sans", "sans-serif"],
         animo: ["animo", "sans-serif"],
       },
+      backgroundImage: {
+        nature: "url('/cards/nature.png')",
+      },
     },
   },
   plugins: [],
