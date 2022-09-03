@@ -11,6 +11,7 @@ module.exports = {
         liver: "#4d4c50",
         "soft-blue": "#598ff1",
         night: "#0d0e12",
+        "light-gold": "#f1e559",
       },
       fontFamily: {
         sans: ["Work Sans", "sans-serif"],
