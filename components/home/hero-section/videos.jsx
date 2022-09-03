@@ -5,17 +5,17 @@ function Videos() {
     {
       src: "/videos/club.mp4",
       style:
-        "min-w-[84px] sm:min-w-[120px] min-h-[250px] md:min-w-[140px] md:min-h-[380px] lg:min-w-[160px]    xl:min-w-[200px] 2xl:min-w-[250px] lg:min-h-[420px] 2xl:min-h-[500px]",
+        "min-w-[84px] sm:min-w-[120px] min-h-[250px] md:min-w-[140px] md:min-h-[380px] lg:min-w-[160px]    xl:min-w-[180px] 2xl:min-w-[200px] lg:min-h-[420px] 2xl:min-h-[500px]",
     },
     {
       src: "/videos/beach.mp4",
       style:
-        "min-w-[84px] sm:min-w-[120px] min-h-[280px] md:min-w-[140px] md:min-h-[420px] lg:min-w-[160px]    xl:min-w-[200px] 2xl:min-w-[250px] lg:min-h-[475px] 2xl:min-h-[550px]",
+        "min-w-[84px] sm:min-w-[120px] min-h-[280px] md:min-w-[140px] md:min-h-[420px] lg:min-w-[160px]    xl:min-w-[180px] 2xl:min-w-[200px] lg:min-h-[475px] 2xl:min-h-[550px]",
     },
     {
       src: "/videos/plaza.mp4",
       style:
-        "min-w-[84px] sm:min-w-[120px] min-h-[250px] md:min-w-[140px] md:min-h-[380px] lg:min-w-[160px]    xl:min-w-[200px] 2xl:min-w-[250px] lg:min-h-[420px] 2xl:min-h-[500px]",
+        "min-w-[84px] sm:min-w-[120px] min-h-[250px] md:min-w-[140px] md:min-h-[380px] lg:min-w-[160px]    xl:min-w-[180px] 2xl:min-w-[200px] lg:min-h-[420px] 2xl:min-h-[500px]",
     },
   ];
   return (
