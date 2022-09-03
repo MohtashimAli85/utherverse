@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -12,6 +13,8 @@ module.exports = {
         "soft-blue": "#598ff1",
         night: "#0d0e12",
         "light-gold": "#f1e559",
+        "dark-grey": "#363943",
+        "dark-purple": "#2a0b53",
       },
       fontFamily: {
         sans: ["Work Sans", "sans-serif"],
@@ -19,6 +22,10 @@ module.exports = {
       },
       backgroundImage: {
         nature: "url('/cards/nature.png')",
+      },
+      screens: {
+        xs: { min: "400px", max: "640px" },
+        ...defaultTheme.screens,
       },
     },
   },
