@@ -40,7 +40,7 @@ function Cards() {
                 src: "/cards/orbit-collage.png",
                 alt: "orbit-collage",
                 style:
-                  " relative lg:absolute lg:left-16 lg:-top-24 min-h-[320px] max-h-[350px] md:min-h-[380px] md:max-w-[380px]   lg:min-h-[550px] lg:max-w-lg xl:max-w-xl",
+                  " relative lg:absolute lg:left-16 lg:-top-24 min-h-[400px] max-h-[350px] md:min-h-[380px] md:max-w-[380px]   lg:min-h-[550px] lg:max-w-lg xl:max-w-xl",
                 objectFit: "contain",
               }}
               link={{ href: "/", title: "Learn More" }}
@@ -61,7 +61,7 @@ function Cards() {
                 src: "/cards/patents.png",
                 alt: "patents",
                 style:
-                  " relative lg:absolute lg:right-24 lg:-top-14 min-h-[320px] max-h-[350px] md:min-h-[380px] md:max-w-[380px]   lg:min-h-[550px] lg:max-w-[480px] ",
+                  " relative lg:absolute lg:right-24 lg:-top-14  min-h-[350px] max-w-[350px] md:min-h-[380px] md:max-w-[380px]   lg:min-h-[550px] lg:max-w-[480px] ",
                 objectFit: "contain",
               }}
               link={{ href: "/", title: "See All Patents" }}
@@ -103,11 +103,11 @@ function Cards() {
                 src: "/cards/phone-tokens.png",
                 alt: "phone-token",
                 style:
-                  " relative lg:absolute lg:right-32 lg:-top-14 min-h-[380px] max-h-[350px] md:min-h-[450px] md:max-w-[380px]   lg:min-h-[450px] lg:max-w-[380px] ",
+                  "  absolute lg:right-32 -top-14 min-h-[380px] max-w-[350px] md:min-h-[450px] md:max-w-[380px]   lg:min-h-[450px] lg:max-w-[380px] ",
                 objectFit: "contain",
               }}
               link={{ href: "/", title: "Learn More" }}
-              style="justify-start items-center gap-10 pb-5 md:pb-10 lg:pb-0 lg:min-h-[400px]"
+              style="justify-end lg:justify-start items-center gap-10 pb-5 md:pb-10 lg:pb-0 min-h-[750px] sm:min-h-[650px] md:min-h-[730px] lg:min-h-[400px]"
             />
           </div>
         </Container>
@@ -125,7 +125,7 @@ function Cards() {
           />
         </Container>
       </div>
-      <div className="metaverse card ">
+      <div className="unity card ">
         <Divider src="/cards/divider-unity.png" alt="unity" />
         <Container>
           <Card
@@ -136,17 +136,18 @@ function Cards() {
               "Platform Agnostic, usable on all your favourite devices: PC Mac, Tablets, Oculus, iOS and Android. Unity already has a massive community and they’ll be able to jump right in to the Utherverse and bring all their experience and creations along.",
             ]}
             bgImg={{
-              src: "bg-[url('/cards/vr-section-background.png')]",
+              src: "md:bg-[url('/cards/vr-section-background.png')] bg-[url('/cards/unity-devices.png')] ",
               alt: "nature",
-              style: "min-h-[250px] bg-cover bg-no-repeat lg:order-1",
+              style:
+                "min-h-[250px] lg:min-h-[450px] bg-contain bg-center bg-no-repeat lg:order-1",
             }}
             link={{ href: "/", title: "Learn More" }}
             style="min-h-[400px] gap-4 pb-5 md:pb-10 lg:pb-0 "
           />
         </Container>
       </div>
-      <div className="metaverse card ">
-        <Divider src="/cards/unity-logo.png" alt="unity" />
+      <div className="unity card ">
+        <Divider src="/cards/unity-logo.png" alt="unity" style="!mb-0" />
       </div>
     </div>
   );
