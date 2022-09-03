@@ -5,13 +5,13 @@ import PoweredBy from "./powered-by";
 import Container from "../../ui/container";
 function HeroSection() {
   return (
-    <section className="hero-section relative sm:px-6 py-5  my-16 space-y-4">
+    <section className="hero-section relative  py-5  my-16 space-y-4">
       <Container>
-        <div className="flex flex-col lg:flex-row gap-10 sm:gap-4 ">
-          <div className="basis-1/2 flex flex-col justify-center gap-10 mt-10">
+        <div className="flex flex-col lg:flex-row md:gap-10  sm:gap-4 ">
+          <div className="lg:basis-1/2 flex flex-col justify-center gap-10 mt-10">
             <div className="space-y-4">
               <div className="flex items-center gap-1 text-primary">
-                <h1 className="text-4xl  md:text-6xl lg:text-7xl xl:text-8xl text- font-bold">
+                <h1 className="text-4xl  md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text- font-bold">
                   Utherverse
                 </h1>
                 <sup className="text-lg md:text-xl lg:text-2xl xl:text-3xl">
@@ -38,7 +38,7 @@ function HeroSection() {
               </p>
             </div>
           </div>
-          <div className="basis-1/2 relative  ">
+          <div className="lg:basis-1/2 relative  ">
             <div className="hidden lg:block video-shadow"></div>
             <div className="flex w-full  justify-center items-center gap-4 relative mr-3 sm:mr-0 ">
               <Videos />
