@@ -8,6 +8,9 @@
 html {
   scroll-behavior: smooth;
 }
+footer {
+  background: linear-gradient(180deg, black, #22014d);
+}
 .link-gradient:hover {
   background: -webkit-linear-gradient(#7e20fc9e, #598ff1ab);
   background: -moz-linear-gradient(#7e20fc9e, #598ff1ab);
