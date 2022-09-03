@@ -103,11 +103,11 @@ function Cards() {
                 src: "/cards/phone-tokens.png",
                 alt: "phone-token",
                 style:
-                  "  absolute lg:right-32 -top-14 min-h-[380px] max-w-[350px] md:min-h-[450px] md:max-w-[380px]   lg:min-h-[450px] lg:max-w-[380px] ",
+                  "  absolute lg:right-32 -top-14 min-h-[320px] max-w-[300px] md:min-h-[450px] md:max-w-[380px]   lg:min-h-[450px] lg:max-w-[380px] ",
                 objectFit: "contain",
               }}
               link={{ href: "/", title: "Learn More" }}
-              style="justify-end lg:justify-start items-center gap-10 pb-5 md:pb-10 lg:pb-0 min-h-[750px] sm:min-h-[650px] md:min-h-[730px] lg:min-h-[400px]"
+              style="justify-end lg:justify-start items-center gap-10 pb-5 md:pb-10 lg:pb-0 min-h-[800px] xs:min-h-[650px] sm:min-h-[600px] md:min-h-[730px] lg:min-h-[400px]"
             />
           </div>
         </Container>
@@ -139,7 +139,7 @@ function Cards() {
               src: "md:bg-[url('/cards/vr-section-background.png')] bg-[url('/cards/unity-devices.png')] ",
               alt: "nature",
               style:
-                "min-h-[250px] lg:min-h-[450px] bg-contain bg-center bg-no-repeat lg:order-1",
+                "min-h-[250px] lg:min-h-[450px] bg-contain md:bg-cover bg-center bg-no-repeat lg:order-1",
             }}
             link={{ href: "/", title: "Learn More" }}
             style="min-h-[400px] gap-4 pb-5 md:pb-10 lg:pb-0 "
