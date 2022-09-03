@@ -1,10 +1,12 @@
 import React from "react";
-import NavBar from "../home/navbar";
+import NavBar from "../navbar";
+import Footer from "../footer";
 function Layout({ children }) {
   return (
     <>
       <NavBar />
       {children}
+      <Footer />
     </>
   );
 }
