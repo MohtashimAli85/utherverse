@@ -4,6 +4,7 @@ import Link from "next/link";
 
 function Card({
   title,
+  titleImg,
   subTitle,
   description,
   img,
@@ -12,6 +13,7 @@ function Card({
   list,
   bgImg,
   CustomComponent,
+  descriptions,
 }) {
   return (
     <>
@@ -47,14 +49,31 @@ function Card({
           </div>
         )}
 
-        <div className="lg:basis-1/2 self-center px-4 md:px-10 space-y-3">
-          <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold">
-            {title}
-          </h1>
+        <div className="lg:basis-1/2 self-center px-4 sm:px-8 md:px-10 space-y-3">
+          {titleImg ? (
+            <div className="flex gap-3 items-center">
+              <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold">
+                {title}
+              </h1>
+              <Image src={titleImg} alt={"img"} width={150} height={100} />
+            </div>
+          ) : (
+            <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold">
+              {title}
+            </h1>
+          )}
           <p className="text-lg md:text-xl font-medium text-primary">
             {subTitle}
           </p>
-          <p className="text-base   font-light">{description}</p>
+          {description && (
+            <p className="text-base   font-light">{description}</p>
+          )}
+          {descriptions &&
+            descriptions.map((e, i) => (
+              <p className="text-base   font-light" key={i}>
+                {e}
+              </p>
+            ))}
           <ul className="space-y-1  text-sm">
             {list &&
               list.map((e, i) => (
