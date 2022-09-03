@@ -5,7 +5,7 @@ import CardsSection from "./card-section";
 import RoadMap from "./roadmap";
 function Home() {
   return (
-    <main className="space-y-24">
+    <main className="space-y-24 pb-10">
       <HeroSection />
       <MeetAeonSection />
       <CardsSection />
