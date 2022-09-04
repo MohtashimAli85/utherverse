@@ -18,11 +18,11 @@ function SocialLinks({ style }) {
   ];
   return (
     <div className=" relative">
-      <h3 className="w-fit mx-auto font-medium text-xl bg-dark-purple px-3 py-2 rounded-2xl absolute left-1/2 -translate-x-1/2 -top-8 shadow-sm shadow-night">
+      <h3 className="w-fit mx-auto font-medium text-base md:text-xl bg-dark-purple px-3 py-2 rounded-2xl absolute left-1/2 -translate-x-1/2 -top-8 shadow-sm shadow-night">
         We&lsquo;re social
       </h3>
       <ul
-        className={`flex justify-center gap-10 bg-primary w-fit mx-auto p-4 rounded-2xl ${style} `}
+        className={`flex justify-center gap-6 md:gap-10 bg-primary w-fit mx-auto p-4 rounded-2xl ${style} `}
       >
         {icons.map((Icon, i) => {
           return (
@@ -32,7 +32,7 @@ function SocialLinks({ style }) {
             >
               <Link href={Icon.href}>
                 <a>
-                  <Icon.icon className="min-w-[40px] min-h-[40px]" />
+                  <Icon.icon className="min-w-[25px] min-h-[25px] md:min-w-[40px] md:min-h-[40px]" />
                 </a>
               </Link>
             </li>
