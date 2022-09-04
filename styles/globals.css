@@ -11,6 +11,12 @@ html {
 footer {
   background: linear-gradient(180deg, black, #22014d);
 }
+.skew {
+  transform: skewX(15deg);
+  -webkit-transform: skewX(15deg);
+  -moz-transform: skewX(15deg);
+  -o-transform: skewX(15deg);
+}
 .gradient,
 .link-gradient:hover {
   background: -webkit-linear-gradient(#7e20fc9e, #598ff1ab);
