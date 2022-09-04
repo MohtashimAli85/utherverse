@@ -26,14 +26,16 @@ function Videos() {
             key={index}
             className={`-skew relative  overflow-hidden ${video.style}`}
           >
-            <video
-              className={`object-cover w-full h-full absolute left-[-37%]  skew `}
-              src={video.src}
-              muted
-              loop
-              autoPlay
-              playsInline
-            />
+            <div className="left-[-37%]  skew w-full h-full absolute">
+              <video
+                className={`object-cover w-full h-full `}
+                src={video.src}
+                muted
+                loop
+                autoPlay
+                playsInline
+              />
+            </div>
           </div>
         );
       })}
