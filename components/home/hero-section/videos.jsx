@@ -26,9 +26,9 @@ function Videos() {
             key={index}
             className={`-skew relative  overflow-hidden ${video.style}`}
           >
-            <div className="left-[-37%]  skew w-full h-full absolute">
+            <div className="left-[50%]  skew w-full h-full absolute">
               <video
-                className={`object-cover w-full h-full `}
+                className={`object-cover w-full h-full -translate`}
                 src={video.src}
                 muted
                 loop
