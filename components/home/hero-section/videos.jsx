@@ -27,7 +27,7 @@ function Videos() {
             className={`-skew-x-[15deg] relative  overflow-hidden ${video.style}`}
           >
             <video
-              className={`object-cover w-full h-full absolute left-[37%] -translate-x-[50%] skew-x-[15deg] `}
+              className={`object-cover w-full h-full absolute left-[37%] -translate-x-[50%] skew `}
               src={video.src}
               muted
               loop
