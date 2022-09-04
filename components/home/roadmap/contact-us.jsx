@@ -12,9 +12,10 @@ function ContactUS() {
           width={500}
           height={500}
           objectFit="contain"
+          className="-z-10"
         />
       </div>
-      <div className="bg-primary px-5 md:px-10 py-5 md:py-10 flex flex-col justify-center items-center md:flex-row md:justify-between gap-4 rounded-2xl  -mt-20 md:-mt-36">
+      <div className="bg-primary px-5 md:px-10 py-5 md:py-10 flex flex-col justify-center items-center md:flex-row md:justify-between gap-4 rounded-2xl  -mt-20 md:-mt-36 lg:-mt-56">
         <div className="basis-[70%]">
           <h2 className="text-xl sm:text-2xl md:text-3xl xl:text-4xl font-bold">
             For business or press Inquiries
