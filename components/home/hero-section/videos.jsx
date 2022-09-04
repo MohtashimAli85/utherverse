@@ -24,7 +24,7 @@ function Videos() {
         return (
           <div
             key={index}
-            className={`-skew-x-[15deg] relative  overflow-hidden ${video.style}`}
+            className={`-skew relative  overflow-hidden ${video.style}`}
           >
             <video
               className={`object-cover w-full h-full absolute left-[37%] -translate-x-[50%] skew `}
