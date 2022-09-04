@@ -7,7 +7,7 @@ function HeroSection() {
   return (
     <section className="hero-section relative  py-5  my-16 space-y-4">
       <Container>
-        <div className="flex flex-col lg:flex-row md:gap-10  sm:gap-4 ">
+        <div className="flex flex-col lg:flex-row md:gap-10  gap-4 ">
           <div className="lg:basis-1/2 flex flex-col justify-center gap-10 mt-10">
             <div className="space-y-4">
               <div className="flex items-center gap-1 text-primary">
