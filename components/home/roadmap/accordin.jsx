@@ -18,10 +18,10 @@ function Accordin({ question, style, img, answers, num }) {
   };
 
   return (
-    <div className="panel flex flex-col lg:flex-row gap-14 lg:items-center w-full md:justify-between  mx-auto ">
+    <div className="panel flex flex-col lg:flex-row gap-3 lg:gap-14 lg:items-center w-full md:justify-between  mx-auto ">
       <button
         className={`flex lg:basis-1/2  gap-3 p-3 mb-2   items-center cursor-pointer ring-1 ring-transparent rounded-md transition duration-150 focus:ring-primary  ${
-          num % 2 == 1 ? "order-2" : "flex-row-reverse"
+          num % 2 == 1 ? "lg:order-2" : "Lg:flex-row-reverse"
         }`}
         onClick={toggleAccordion}
       >
@@ -34,10 +34,10 @@ function Accordin({ question, style, img, answers, num }) {
 
       <div
         ref={mobileContentRef}
-        className={`max-h-0  rounded-md  gap-4 lg:hidden bg-night overflow-hidden answer px-3 transition-[max-height] duration-500 text-base  md:text-lg `}
+        className={`max-h-0  rounded-md  space-y-4 lg:hidden  overflow-hidden answer px-3 transition-[max-height] duration-500 text-base  md:text-lg `}
       >
         {answers.map((answer, i) => {
-          return <Answer key={i} answer={answers} img={img} />;
+          return <Answer key={i} answer={answer} img={img} />;
         })}
       </div>
       <div
