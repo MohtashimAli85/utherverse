@@ -40,7 +40,7 @@ function Cards() {
                 src: "/cards/orbit-collage.png",
                 alt: "orbit-collage",
                 style:
-                  " relative lg:absolute lg:left-16 lg:-top-24 min-h-[400px] max-h-[350px] md:min-h-[380px] md:max-w-[380px]   lg:min-h-[550px] lg:max-w-lg xl:max-w-xl",
+                  " relative lg:absolute lg:left-16 lg:-top-24 min-h-[350px] max-w-[350px] md:min-h-[380px] md:max-w-[380px]   lg:min-h-[550px] lg:max-w-lg xl:max-w-xl",
                 objectFit: "contain",
               }}
               link={{ href: "/", title: "Learn More" }}
@@ -186,7 +186,7 @@ function MMOR() {
   return (
     // <div>
     <video
-      className={`object-cover w-full h-full  `}
+      className={`object-cover w-full h-full min-h-[300px] `}
       src={"/videos/plaza.mp4"}
       muted
       loop
